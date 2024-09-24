@@ -1,13 +1,13 @@
-function add(input1, input2) {
-    return input1 + input2;
+// "unknown"
+var userInput;
+var userName;
+userInput = 5;
+userInput = "Max";
+if (typeof userInput === "string") {
+    userName = userInput;
 }
-function printResult(num) {
-    console.log("Result: " + num);
+// "never"
+function generateError(message, statusCode) {
+    throw { message: message, statusCode: statusCode };
 }
-console.log(printResult(add(5, 7)));
-// let someValue =  undefined
-var combinedValues;
-combinedValues = add;
-// combinedValues = printResult;
-// combinedValues = 5;
-console.log(combinedValues(5, 11));
+generateError("something went wrong", 500);
