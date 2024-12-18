@@ -1,13 +1,25 @@
-var User = {
+/*
+const User = {
+  name: "Gopal",
+  email: "gopal@dev.com",
+  isActive: true,
+};
+
+function createUser({ name: string, isPaid: boolean }) {}
+
+const newUser = { name: "Gopal", isPaid: true, email: "gopal@gmail.com" };
+
+createUser(newUser);
+
+function createCourse(): { name: string; price: number } {
+  return { name: "reactjs", price: 399 };
+}
+*/
+var myUser = {
+    _id: "123",
     name: "Gopal",
-    email: "gopal@dev.com",
+    email: "g@g.com",
     isActive: true,
 };
-function createUser(_a) {
-    var string = _a.name, boolean = _a.isPaid;
-}
-var newUser = { name: "Gopal", isPaid: true, email: "gopal@gmail.com" };
-createUser(newUser);
-function createCourse() {
-    return { name: "reactjs", price: 399 };
-}
+// myUser._id = "239";
+myUser.email = "g@gmail.com";
