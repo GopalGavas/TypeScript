@@ -1,20 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var grettings = "Hello Gopal";
-grettings.toLowerCase();
-console.log(grettings);
-// Number
-var myNum = 6.938;
-myNum.toFixed();
-// myNum = "Hello";
-//boolean
-var isboolean = true;
-// any {not recommended}
-var hero;
-function getHero() {
-    return "Thor";
-}
-hero = getHero();
 // Function
 function addTwo(n1, n2) {
     return n1 + n2;
@@ -31,9 +16,24 @@ addTwo(5, 7);
 toUpper("Hitesh");
 signUpUser("Gopal", "gopal@dev.com", true);
 loginUser("aakash", "aakash@dev.com");
-function getValue(myVal) {
-    if (myVal > 5) {
-        return true;
-    }
-    return "200  OK";
+// unions [will cover later]
+// function getValue(myVal: number): boolean | string {
+//   if (myVal > 5) {
+//     return true;
+//   }
+//   return "200  OK";
+// }
+var getHello = function (name) {
+    return "";
+};
+var heros = ["thor", "spiderman", "ironman"];
+// const heros = [1, 2, 3];
+heros.map(function (hero) {
+    return "Hero is ".concat(hero);
+});
+function consoleError(errmsg) {
+    console.log(errmsg);
+}
+function handleError(errmsg) {
+    throw new Error(errmsg);
 }
