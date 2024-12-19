@@ -46,3 +46,9 @@ const stringArray: string[] = ["1", "2", "3"];
 // const array: number[] | string[] = [1, 4]; // {this means the array can either me string or a number array}
 
 const array: (string | number | boolean)[] = [1, 2, 3, "4", true]; // {with this we can have multiple datatypes in an array}
+
+let seats: "aisle" | "middle" | "window";
+
+seats = "window";
+
+export {};
