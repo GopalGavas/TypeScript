@@ -27,3 +27,5 @@ class Youtube implements TakePhoto {
     public burst: number
   ) {}
 }
+
+export {};
